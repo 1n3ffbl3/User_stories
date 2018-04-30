@@ -1,4 +1,4 @@
-var model = {
+var model_array = {
     todos: [], // story 1
     create: function(todo) { // story 1
         this.todos.push(todo)
@@ -16,5 +16,12 @@ var model = {
         if (index !== -1) {
             this.todos[index] = new_value;
         }
+    },
+    delete_one: function(new_value){
+        var index = this.todos.indexOf(new_value);
+        if (index !== -1){
+            this.todos.splice(index, 1);
+        }
+
     }
 };

@@ -7,5 +7,8 @@ var terminal_handler = {
     },
     update_one: function(old_value, new_value){
         controller.update_one(old_value, new_value);
+    },
+    delete_one: function(new_value){
+        controller.delete_one(new_value);
     }
 };
